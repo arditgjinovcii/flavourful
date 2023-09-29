@@ -1,0 +1,147 @@
+@media(max-width:1240px ) {
+    /* Home page */
+    .header .nav {
+        display: none;
+      }
+    .container {
+        max-width:950px;
+        padding-inline:1rem;
+    }
+    
+    .mobile-nav .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Home Hero section */
+    .hero.container {
+        padding:0;
+    }
+    .hero-img {
+        max-width:55%;
+        object-fit: cover;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-text {
+        padding:1.5rem;
+    }
+
+    .hero-text .hero-stats{
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size:2rem;
+    }
+
+    .hero-info {
+        font-size: 1rem;
+    }
+    /* End Home page */
+
+    /* Home page articles */
+    
+  }
+  
+  @media(max-width:767px) {
+    .sign .btn {
+        padding:5px 15px;
+        font-size:14px;
+    }
+
+    .hamburger {
+        width:20px;
+    }
+    .hamburger .bar, 
+    .hamburger:after,
+    .hamburger:before {
+        height:2px;
+    }
+  }
+  @media(min-width: 1241px) {
+    .mobile-nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* End media queries */
+
+
+  /* Contact popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top:2rem;
+    padding:1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+
+}
+
+.contact-title {
+    font-size:2rem;
+    color:lime
+}
+.contact-form input, 
+.contact-form textarea {
+    width:100%;
+    /* display: block; */
+    margin-bottom:1.5rem;
+    padding: 5px;
+    border:none;
+    border-bottom:1px solid #ddd;
+
+}
+
+.contact-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top:3rem;
+    padding:1rem;
+}
+
+.contact-buttons a {
+    color:limegreen;
+}
